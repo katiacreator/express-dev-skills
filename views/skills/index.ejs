@@ -14,13 +14,16 @@
     <% } %>
     <ul>
       <% skills.forEach(function(skill) { %>
+        <input type="checkbox" class="skillsCheckbox">
         <li> 
-      <a href="/skills/<%= skill._id %> "><%= skill.text %></a> 
-        - <%= skill.done ? 'learned' : 'not learned yet' %></li>
+      <a href="/skills/<%= skill._id %> "><%= skill.text %></a> </li> 
+      <span><%= skill.done ? 'learned' : 'not learned yet' %> </span>  
+      
       <% }) %>
     </ul>
   </ul>
-  <a href="/skills/new" class="addBtn">Add Skill</a>
+  <p>Click here to add a new skill to the list.</p>
+  <a href="/skills/new" class="addBtn">ADD NEW SKILL</a>
 
   </body>
 </html>

@@ -8,7 +8,7 @@
   <title>Developer Skills</title>
 </head>
 <body class="skills-page">
-	<h1>Skills</h1>
+	<h1>Developer Skills</h1>
   <% if(error) { %>
     <h2><%= error %></h2>
   <% } else { %>
@@ -16,6 +16,7 @@
     <h3><%= skill.text %></h3>
     <p>Learned: <%= skill.done ? 'Yes' : 'No' %></p>
   <% } %>
-	<a href="/skills" class="btn">GO BACK</a>
+  <p>Click return to go back to skills checklist.</p>
+	<a href="/skills" class="btn returnBtn">RETURN</a>
 </body>
 </html>
