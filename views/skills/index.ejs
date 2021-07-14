@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheets/style.css">
     <title>Developer Skills</title>
   </head>
-  <body>
+  <body class="skills-page">
     <h1>Skills as of <%= time %> </h1>
     <% if(error) { %>
     <h2><%= error %></h2>
@@ -14,12 +15,12 @@
     <ul>
       <% skills.forEach(function(skill) { %>
         <li> 
-      <a href="/skillss/<%= skill._id %> "><%= skill.text %></a> 
+      <a href="/skills/<%= skill._id %> "><%= skill.text %></a> 
         - <%= skill.done ? 'learned' : 'not learned yet' %></li>
       <% }) %>
     </ul>
   </ul>
-  <a href="/skills/new">Add Skill</a>
+  <a href="/skills/new" class="addBtn">Add Skill</a>
 
   </body>
 </html>

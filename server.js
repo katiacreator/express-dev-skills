@@ -16,6 +16,13 @@ app.set(
   path.join(path.dirname(fileURLToPath(import.meta.url)), 'views')
 )
 app.set('view engine', 'ejs')
+// add middleware below the above line of code
+app.use(function(req, res, next) {
+  console.log('Hello Visitor!');
+   // Add a time property to the req object
+  req.time = new Date().toLocaleTimeString();
+  next();
+});
 
 app.use(logger('dev'))
 app.use(express.json())
