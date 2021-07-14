@@ -14,8 +14,8 @@
     <% } %>
     <ul>
       <% skills.forEach(function(skill) { %>
-        <input type="checkbox" class="skillsCheckbox">
-        <li> 
+        
+        <li> <input type="checkbox" class="skillsCheckbox">
       <a href="/skills/<%= skill._id %> "><%= skill.text %></a> </li> 
       <span><%= skill.done ? 'learned' : 'not learned yet' %> </span>  
       
