@@ -9,38 +9,21 @@ p{
   text-align: justify;
 }
 
-.skills-page{
-  background-color: lightgrey;
-}
-
 .btn {
   text-decoration: none;
   text-align: center;
-  color: #00B7FF;
-  background-color: lightgrey;
-  padding: 20px;
-  border-radius: 20px;
-
-}
-.btn:hover{
-  background-color: #00B7FF;
-  color: seashell;
-}
-
-.addBtn, .saveBtn {
-  text-decoration: none;
-  text-align: center;
   color: black;
-  background-color: lightgrey;
+  background-color: #00B7FF;
   padding: 20px;
   border-radius: 20px;
-
 }
 
-.addBtn:hover, .saveBtn:hover{
-  background-color: #00B7FF;
-  color: seashell;
+.btn:hover{
+  background-color: lightgrey;
+  color: #00B7FF;
 }
+
+
 
 ul{
   border: solid 3px #00B7FF;
@@ -62,5 +45,7 @@ a {
 }
 
 li:hover, a:hover{
-  color: #00B7FF ;
+  
 }
+
+
