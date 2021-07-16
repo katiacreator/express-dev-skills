@@ -45,7 +45,16 @@ a {
 }
 
 li:hover, a:hover{
-  
+  color:sienna
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
 }
 
 

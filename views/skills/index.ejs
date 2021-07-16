@@ -16,9 +16,17 @@
       <% skills.forEach(function(skill) { %>
         
         <li> 
-          <span><%= skill.done ? '✅' : '❔' %> </span>  
-          <a href="/skills/<%= skill._id %> "><%= skill.text %></a> </li> 
-      
+          <form 
+          action="/skills/<%= skill._id %>?_method=DELETE"
+          class='delete-form'
+          method="POST"
+        >
+          <button type="submit">DELETE</button>
+        </form>
+          <a href="/skills/<%= skill._id %>"><%= skill.text%></a>
+          - <%= skill.done ? '✅' : '❔' %>
+          </li> 
+          
       <% }) %>
     </ul>
   </ul>
