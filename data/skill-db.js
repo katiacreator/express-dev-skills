@@ -6,7 +6,7 @@ export {
 const skills = [
   {text: 'build basic website in HTML5, CSS3, and Vanilla Javascript', done: true, _id: 322521},
   {text: 'build browser games with JS', done: true, _id: 409721},
-  {text: 'DOM manipulation', done: true, _id: 806139},
+  {text: 'DOM manipulation', done: false, _id: 806139},
   {text: 'experience with CSS frameworks', done: true, _id: 306489},
   {text: 'database management with PostgreSQL', done: false, _id: 618444},
   {text: 'experience with JS libraries', done: true, _id: 613009},

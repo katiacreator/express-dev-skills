@@ -2,6 +2,7 @@ body {
   padding: 50px;
   font: 24px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #00B7FF;
+  border: white solid 2px;
 }
 
 p{
@@ -45,16 +46,29 @@ a {
 }
 
 li:hover, a:hover{
-  color:sienna
+  color:rgb(230, 36, 68)
 }
 
 .delete-form {
   display: inline-block;
   margin-right: 10px;
+  border: none;
 }
-	
-.delete-form button {
-  color: red;
+
+.deleteBtn, .saveBtn {
+  background-color: lightgrey;
+  color: #00B7FF;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
 }
+
+.deleteBtn:hover, .saveBtn:hover{
+  color: black;
+  background-color: #00B7FF;
+}
+
 
 

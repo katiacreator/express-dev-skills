@@ -12,25 +12,21 @@
     <% if(error) { %>
     <h2><%= error %></h2>
     <% } %>
-    <ul>
+      <ul class="list-group">
       <% skills.forEach(function(skill) { %>
-        
-        <li> 
-          <form 
-          action="/skills/<%= skill._id %>?_method=DELETE"
-          class='delete-form'
-          method="POST"
-        >
-          <button type="submit">DELETE</button>
-        </form>
-          <a href="/skills/<%= skill._id %>"><%= skill.text%></a>
-          - <%= skill.done ? '✅' : '❔' %>
-          </li> 
-          
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox" value="" <%= skill.done ? 'checked ' : '' %> >
+              <a href="/skills/<%= skill._id %>"><%= skill.text%></a>
+              <form 
+              action="/skills/<%= skill._id %>?_method=DELETE"
+              class='delete-form'
+              method="POST"
+            >
+              <button type="submit" class="deleteBtn">DELETE</button>
+            </form>
+            </li>
       <% }) %>
     </ul>
-  </ul>
   <a href="/skills/new" class="btn">ADD NEW SKILL</a>
-
   </body>
 </html>
